@@ -247,7 +247,7 @@ const Contact = () =>
                                         </div>
                                         <div>
                                             <div style={{ fontWeight: 600, marginBottom: '0.25rem' }}>Location</div>
-                                            <div style={{ color: 'var(--text-secondary)' }}>Toronto, Ontario<br />Serving the Greater Toronto Area</div>
+                                            <div style={{ color: 'var(--text-secondary)' }}>29 Hallsport Crescent<br />Downsview, ON M3M 2K8<br />Canada</div>
                                         </div>
                                     </div>
 
@@ -257,7 +257,7 @@ const Contact = () =>
                                         </div>
                                         <div>
                                             <div style={{ fontWeight: 600, marginBottom: '0.25rem' }}>Phone</div>
-                                            <div style={{ color: 'var(--text-secondary)' }}>+1 (416) 555-0123</div>
+                                            <div style={{ color: 'var(--text-secondary)' }}>+1 (416) 418-7141</div>
                                         </div>
                                     </div>
                                 </div>
@@ -272,22 +272,17 @@ const Contact = () =>
                                 boxShadow: 'var(--shadow-lg)',
                                 position: 'relative'
                             }}>
-                                <img
-                                    src="https://images.unsplash.com/photo-1503206557829-c19be6574543?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                                    alt="Toronto Skyline"
-                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                                />
-                                <div style={{
-                                    position: 'absolute',
-                                    bottom: 0,
-                                    left: 0,
-                                    right: 0,
-                                    background: 'linear-gradient(to top, rgba(0,0,0,0.7), transparent)',
-                                    padding: '2rem 1.5rem 1rem',
-                                    color: 'white'
-                                }}>
-                                    <div style={{ fontWeight: 600 }}>Based in Toronto</div>
-                                </div>
+                                <iframe
+                                    width="100%"
+                                    height="100%"
+                                    frameBorder="0"
+                                    scrolling="no"
+                                    marginHeight="0"
+                                    marginWidth="0"
+                                    src="https://maps.google.com/maps?q=29%20Hallsport%20Crescent%2C%20Downsview%2C%20M3M%202K8%2C%20Ontario%2C%20Canada&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                    style={{ border: 0, filter: 'grayscale(0.2)' }}
+                                    title="Office Location"
+                                ></iframe>
                             </div>
                         </motion.div>
                     </div>

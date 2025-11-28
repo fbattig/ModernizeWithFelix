@@ -83,7 +83,7 @@ const Chatbot = () =>
 
         if (lowerText.includes('contact') || lowerText.includes('email') || lowerText.includes('phone') || lowerText.includes('reach'))
         {
-            return "You can reach us at info@ModernizeWithFelix.com. Alternatively, you can book a free consultation through our Contact page.";
+            return "You can reach us at info@ModernizeWithFelix.com or call +1 (416) 418-7141. Alternatively, you can book a free consultation through our Contact page.";
         }
 
         if (lowerText.includes('hello') || lowerText.includes('hi') || lowerText.includes('hey'))
