@@ -62,7 +62,7 @@ const Navbar = () =>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '80px' }}>
         <Link to="/" style={{ fontSize: '1.5rem', fontWeight: '800', color: 'var(--primary)', letterSpacing: '-0.5px', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
           <Zap size={28} fill="currentColor" />
-          Modernize With Felix
+          KRENOVO
         </Link>
 
         {/* Desktop Menu */}
@@ -131,7 +131,7 @@ const Footer = () =>
           <div>
             <div style={{ fontSize: '1.5rem', fontWeight: '800', color: 'white', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <Zap size={24} fill="currentColor" />
-              Modernize With Felix
+              KRENOVO
             </div>
             <p style={{ maxWidth: '300px' }}>
               Expert IT consulting for small and medium businesses in the Greater Toronto Area.

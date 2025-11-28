@@ -48,17 +48,14 @@ const Hero = () =>
                     style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}
                 >
                     <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', lineHeight: '1.1', marginBottom: '1.5rem', letterSpacing: '-1px' }}>
-                        Modernize Your Business with <span style={{ color: 'var(--primary)' }}>Technology, Automation, and AI</span>
+                        Empowering Your Digital Future with <span style={{ color: 'var(--primary)' }}>Smart Technology Solutions</span>
                     </h1>
-                    <p style={{ fontSize: '1.25rem', marginBottom: '2.5rem', color: 'var(--text-secondary)', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
-                        Helping GTA businesses eliminate manual work and upgrade their digital systems for the modern era.
+                    <p style={{ fontSize: '1.25rem', marginBottom: '2.5rem', color: 'var(--text-secondary)', maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto' }}>
+                        At Kreonovo Inc, we transform ideas into robust, scalable, and secure digital systems—tailored to your business goals.
                     </p>
                     <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                        <Link to="/contact" className="btn btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.1rem' }}>
-                            Book Free Consultation
-                        </Link>
-                        <Link to="/services" className="btn btn-outline" style={{ padding: '1rem 2rem', fontSize: '1.1rem', background: 'white' }}>
-                            View Services
+                        <Link to="/services" className="btn btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.1rem' }}>
+                            Our Solutions
                         </Link>
                     </div>
                 </motion.div>
@@ -100,7 +97,7 @@ const ServicesSummary = () =>
                     className="text-center"
                     style={{ marginBottom: '4rem' }}
                 >
-                    <h2 style={{ fontSize: '2.5rem' }}>Our Expertise</h2>
+                    <h2 style={{ fontSize: '2.5rem' }}>Our Solutions</h2>
                     <p style={{ fontSize: '1.125rem', color: 'var(--text-secondary)' }}>Comprehensive solutions to drive your business forward.</p>
                 </motion.div>
 
@@ -112,24 +109,24 @@ const ServicesSummary = () =>
                     viewport={{ once: true }}
                 >
                     <ServiceCard
-                        icon={Monitor}
-                        title="IT Modernization"
-                        description="Upgrade legacy systems and infrastructure to improve performance, security, and reliability."
-                    />
-                    <ServiceCard
-                        icon={Cpu}
-                        title="AI & Automation"
-                        description="Streamline repetitive tasks and unlock insights with cutting-edge artificial intelligence solutions."
-                    />
-                    <ServiceCard
                         icon={Cloud}
-                        title="Cloud & Azure Solutions"
-                        description="Secure migration and management of cloud infrastructure to enable remote work and scalability."
+                        title="Cloud & DevOps Consulting"
+                        description="Leverage modern cloud platforms to deploy scalable and robust applications."
                     />
                     <ServiceCard
                         icon={Layout}
-                        title="Website Upgrades"
-                        description="Transform your online presence with modern, responsive, and high-converting web designs."
+                        title="Full-Stack Web & Mobile Development"
+                        description="Build responsive web and mobile applications using cutting-edge technologies."
+                    />
+                    <ServiceCard
+                        icon={Cpu}
+                        title="AI, Machine Learning & Automation"
+                        description="Integrate intelligent automation and data-driven insights to accelerate business value."
+                    />
+                    <ServiceCard
+                        icon={Monitor}
+                        title="Legacy System Modernization"
+                        description="Refactor and modernize existing systems to ensure scalability and performance."
                     />
                 </motion.div>
             </div>
