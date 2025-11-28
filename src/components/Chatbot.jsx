@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { MessageSquare, X, Send } from 'lucide-react';
+import { MessageSquare, X, Send, Bot } from 'lucide-react';
+
+
 import './Chatbot.css';
 
 const Chatbot = () =>
@@ -122,8 +124,20 @@ const Chatbot = () =>
                 <div className="chatbot-window">
                     <div className="chatbot-header">
                         <div className="chatbot-header-title">
-                            <MessageSquare size={20} />
-                            <span>Ask Felix AI</span>
+                            <div style={{
+                                background: 'rgba(255,255,255,0.2)',
+                                padding: '8px',
+                                borderRadius: '50%',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center'
+                            }}>
+                                <Bot size={24} />
+                            </div>
+                            <div>
+                                <div style={{ lineHeight: '1.2' }}>Ask Felix AI</div>
+                                <div style={{ fontSize: '0.75rem', opacity: 0.9, fontWeight: 400 }}>Online</div>
+                            </div>
                         </div>
                         <button className="chatbot-close" onClick={toggleChat} aria-label="Close Chat">
                             <X size={20} />
