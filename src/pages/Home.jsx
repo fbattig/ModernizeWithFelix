@@ -31,9 +31,9 @@ const Hero = () =>
 {
     return (
         <section id="hero" className="section" style={{
-            paddingTop: '120px',
-            paddingBottom: '120px',
-            background: 'linear-gradient(120deg, #F0F9FF 0%, #E0F2FE 50%, #DBEAFE 100%)',
+            paddingTop: '160px',
+            paddingBottom: '140px',
+            background: 'linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%)',
             position: 'relative',
             overflow: 'hidden'
         }}>
@@ -68,22 +68,23 @@ const Hero = () =>
 };
 
 const ServiceCard = ({ icon: Icon, title, description }) => (
-    <motion.div variants={fadeInUp} className="card" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+    <motion.div variants={fadeInUp} className="card" style={{ height: '100%', display: 'flex', flexDirection: 'column', background: 'rgba(255,255,255,0.8)', backdropFilter: 'blur(10px)' }}>
         <div style={{
             width: '64px',
             height: '64px',
-            borderRadius: '16px',
+            borderRadius: '20px',
             background: 'linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             marginBottom: '1.5rem',
-            color: 'var(--primary)'
+            color: 'var(--primary)',
+            boxShadow: '0 4px 6px -1px rgba(37, 99, 235, 0.1)'
         }}>
-            <Icon size={32} />
+            <Icon size={28} strokeWidth={1.5} />
         </div>
-        <h3 style={{ fontSize: '1.35rem', marginBottom: '1rem' }}>{title}</h3>
-        <p style={{ color: 'var(--text-secondary)', flex: 1 }}>{description}</p>
+        <h3 style={{ fontSize: '1.25rem', marginBottom: '0.75rem', fontWeight: 600 }}>{title}</h3>
+        <p style={{ color: 'var(--text-secondary)', flex: 1, fontSize: '1rem', lineHeight: '1.6' }}>{description}</p>
     </motion.div>
 );
 
@@ -192,7 +193,7 @@ const About = () =>
 };
 
 const CaseStudyCard = ({ title, category }) => (
-    <motion.div variants={fadeInUp} className="card" style={{ padding: 0, overflow: 'hidden', border: 'none' }}>
+    <motion.div variants={fadeInUp} className="card" style={{ padding: 0, overflow: 'hidden' }}>
         <div style={{ height: '200px', background: '#E2E8F0', position: 'relative' }}>
             {/* Placeholder for image */}
             <div style={{
